@@ -1,5 +1,5 @@
 /** 
--Import Google Fonts and Define font variables
+-Import Google Font and Define font variable
 -Define color varibalbes
 -Reset CSS properties(margin, padding)
 */
@@ -16,7 +16,7 @@ $linear-gradient: linear-gradient(
   hsl(6, 100%, 80%),
   hsl(335, 100%, 65%)
 );
-// hsl(6, 100%, 80%) to hsl(335, 100%, 65%) ;
+
 // Colors
 :root {
   --color-pale-blue: hsl(243, 100%, 93%);
