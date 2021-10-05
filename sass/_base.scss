@@ -1,0 +1,43 @@
+/** 
+-Import Google Fonts and Define font variables
+-Define color varibalbes
+-Reset CSS properties(margin, padding)
+*/
+
+// Google Font
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+// Font variable
+$raleway: "Raleway", sans-serif;
+
+// gradient
+// hsl(6, 100%, 80%) to hsl(335, 100%, 65%) ;
+// Colors
+:root {
+  --color-pale-blue: hsl(243, 100%, 93%);
+  --color-grayish-blue: hsl(229, 7%, 55%);
+  --color-dark-blue: hsl(228, 56%, 26%);
+  --color-very-dark-blue: hsl(229, 57%, 11%);
+}
+
+// Resetting
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $raleway;
+  font-size: 1.4rem;
+}
