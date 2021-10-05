@@ -54,6 +54,9 @@
         color: var(--color-grayish-blue);
         font-weight: 400;
         font-size: inherit;
+        @media screen and (min-width: 967px) {
+          text-align: left;
+        }
         .text-white {
           color: var(--color-pale-blue);
           font-weight: 700;
