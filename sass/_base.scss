@@ -11,6 +11,11 @@
 $raleway: "Raleway", sans-serif;
 
 // gradient
+$linear-gradient: linear-gradient(
+  to right,
+  hsl(6, 100%, 80%),
+  hsl(335, 100%, 65%)
+);
 // hsl(6, 100%, 80%) to hsl(335, 100%, 65%) ;
 // Colors
 :root {
@@ -40,4 +45,43 @@ html {
 body {
   font-family: $raleway;
   font-size: 1.4rem;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../images/bg-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.upper {
+  @media screen and (min-width: 892px) {
+    z-index: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background-color: var(--color-very-dark-blue);
+  }
+}
+.lower {
+  @media screen and (min-width: 892px) {
+    z-index: 0;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    background-color: var(--color-very-dark-blue);
+  }
+  &__inner {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20rem;
+    background-image: url("../images/bg-desktop.png");
+    background-position: left;
+    background-size: cover;
+  }
 }

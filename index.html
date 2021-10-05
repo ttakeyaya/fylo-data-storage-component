@@ -15,22 +15,42 @@
   </style>
 </head>
 <body>
+  <div class="upper"></div>
+  <div class="lower"><div class="lower__inner"></div></div>
   <article class="fylo">
     <figure class="fylo__image-container">
-      <p><img src="images/logo.svg" alt="log image"></p>
+      <p class="logo"><img src="images/logo.svg" alt="log image"></p>
       <div class="interactive-container">
-        <p><img src="images/icon-folder.svg" alt="folder icon"></p>
-        <p><img src="images/icon-document.svg" alt="document icon"></p>
-        <p><img src="images/icon-upload.svg" alt="upload icon"></p>
+        <div class="icon-container">
+          <p class="icon"><img src="images/icon-document.svg" alt="document icon"></p>
+        </div>
+        <div class="icon-container">
+          <p class="icon"><img src="images/icon-folder.svg" alt="folder icon"></p>
+        </div>
+        <div class="icon-container">
+          <p class="icon"><img src="images/icon-upload.svg" alt="upload icon"></p>
+        </div>
       </div>
     </figure>
     <div class="fylo__texts-container">
-      <h3>You’ve used 815 GB of your storage</h3>
-      <p>185 GB Left</p>
-      <div class="progress-container">
-        <div class="progress-bar"></div>
-        <p>0 GB</p>
-        <p>1000 GB</p>
+      <div class="storage">
+        <h3 class="storage__title">You’ve used <span class="text-white">815 GB</span>of your storage</h3>
+        
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-bar__inner">
+              <div class="progress-bar__inner__circle"></div>
+            </div>
+          </div>
+          <div class="progress-container__texts">
+            <p>0 GB</p>
+            <p>1000 GB</p>
+          </div>
+        </div>
+        <div class="float">
+          <p class="float__text"><span class="text-num">185</span><span class="text-left">GB Left</span></p>
+          <div class="float__triangle"></div>
+        </div>
       </div>
     </div>
   </article>
